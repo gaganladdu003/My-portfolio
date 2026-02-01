@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#020617;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial;
+}
+body{
+background:var(--bg);
+color:var(--text);
+scroll-behavior:smooth;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(2,6,23,.9);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 8%;
+  z-index:1000;
+}
+nav h1{
+  color:var(--accent);
+}
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+nav a:hover{
+  color:var(--accent);
+}
+
+header{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  flex-direction:column;
+  padding:100px 20px;
+}
+header h2{
+  font-size:3rem;
+  color:var(--accent);
+}
+header p{
+  font-size:1.3rem;
+  margin:10px 0;
+}
+.viewproject{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:var(--accent);
+  color:#020617;
+  border-radius:5px;
+}
+
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+background:var(--accent);
+color:#020617;
+border-radius:5px;
+}
+
+section{
+  padding:80px 10%;
+}
+h3{
+  text-align:center;
+  color:var(--accent);
+  margin-bottom:40px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:10px;
+  margin-bottom:20px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.skills,.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+
+
+.quote{
+  text-align:center;
+  font-size:1.4rem;
+  font-style:italic;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+@media(max-width:768px){
+  nav ul{display:none;}
+  header h2{font-size:2.2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>VEERABATHINI GAGAN KUMAR</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h2>Hi, I'm Gagan Kumar</h2>
+  <p>Full Stack Developer & Startup Enthusiast</p>
+  <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section id="about">
+<h3>About Me</h3>
+<div class="card">
+I am a Computer Science student passionate about building modern websites and applications.
+</div>
+</section>
+
+<section id="skills">
+<h3>Skills</h3>
+<div class="skills">
+  <div class="card">HTML</div>
+  <div class="card">CSS</div>
+  <div class="card">JavaScript</div>
+  <div class="card">React</div>
+  <div class="card">Python</div>
+  <div class="card">C Language</div>
+</div>
+</section>
+
+<section id="projects">
+<h3>Projects</h3>
+<div class="projects">
+  <div class="card project">
+   
+    <h4>Portfolio Website</h4>
+    <p>Personal responsive website.</p>
+    <a href=" " class="viewproject">View Project</a>
+  </div>
+
+ 
+</div>
+</section>
+
+<section>
+<div class="quote">
+"Design is not just what it looks like and feels like. Design is how it works." <br>
+                        - Steve Jobs
+</div>
+</section>
+
+<section id="contact">
+<h3>Contact</h3>
+<div class="card">
+<p>Email: gaganladdu031@gmail.com</p>
+<p>Phone Number: ----------</p>
+<p>Instagram: <a href="https://www.instagram.com/l_laddu003?igsh=aHhpM2l4aWNqYmxj" target="_blank">@l_laddu003</a></p>
+
+</div>
+</section>
+
+<footer>
+© 2026 Gagan | USE AI FOR AI 🤖
+</footer>
+
+</body>
+</html>
